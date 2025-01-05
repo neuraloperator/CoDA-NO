@@ -74,7 +74,7 @@ The data is in the folder `TF_cfd2_results`, and the organization is the same as
 
 ### Installations
 
-** The codomain attention layer is now available through the `neuraloperator` library** ([implementation](https://github.com/neuraloperator/neuraloperator/blob/main/neuralop/layers/coda_blocks.py)).
+**The codomain attention layer is now available through the `neuraloperator` library** ([implementation](https://github.com/neuraloperator/neuraloperator/blob/main/neuralop/layers/coda_blocks.py)).
 
 The configurations for all the experiments are at `config/ssl_ns_elastic.yaml` (for fluid-structure interaction) and `config/RB_config.yaml` (For the Releigh Bernard system).
 
