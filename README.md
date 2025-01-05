@@ -1,16 +1,8 @@
-<p align="center">
-    <img src="https://github.com/ashiq24/CoDA-NO/blob/web_resources/images/banner.png" alt="">
-</p>
 
-**Coda-NO** *is designed to adapt seamlessly to new multi-physics systems. Pre-trained on fluid dynamics data from the Navier-Stokes equations, which include variables* $u_x$, $u_y$, and $p$, *CoDA-NO can easily transition to multi-physics fluid-solid interaction systems that incorporate new variables* $d_x$ and $d_y$, *all without requiring any architectural changes.*
+**HOW TO USE CoDA-NO MODEL** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1-reJuIh8jCW38EPGed75hkAOMR2wc7Gq?usp=sharing)
 
 
-# Pretraining  Codomain Attention Neural Operators for Solving Multiphysics PDEs
-
-
-**Example:** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1-reJuIh8jCW38EPGed75hkAOMR2wc7Gq?usp=sharing)
-
-**The codomain attention layer is now available through the `neuraloperator` library** ([implementation](https://github.com/neuraloperator/neuraloperator/blob/main/neuralop/layers/coda_blocks.py)).
+## Pretraining  Codomain Attention Neural Operators for Solving Multiphysics PDEs
 
 **Abstract**: Existing neural operator architectures face
 challenges when solving multiphysics problems with coupled partial differential equations (PDEs), due to complex geometries, interactions between physical variables, and the lack of large amounts of high-resolution training data. To address these issues, we propose Codomain Attention Neural Operator (CoDA-NO), which tokenizes functions along the codomain or channel space, enabling self-supervised learning or pretraining of multiple PDE systems. Specifically, we extend positional encoding, self-attention, and normalization layers to the function space. CoDA-NO can learn representations of different PDE systems with a single model. We evaluate CoDA-NO's potential as a backbone for learning multiphysics PDEs over multiple systems by considering few-shot learning settings. On complex downstream tasks with limited data, such as fluid flow simulations and fluid-structure interactions, we found CoDA-NO to outperform existing methods on the few-shot learning task by over $36$%. 
@@ -81,6 +73,8 @@ The data is in the folder `TF_cfd2_results`, and the organization is the same as
 ## Experiments
 
 ### Installations
+
+** The codomain attention layer is now available through the `neuraloperator` library** ([implementation](https://github.com/neuraloperator/neuraloperator/blob/main/neuralop/layers/coda_blocks.py)).
 
 The configurations for all the experiments are at `config/ssl_ns_elastic.yaml` (for fluid-structure interaction) and `config/RB_config.yaml` (For the Releigh Bernard system).
 
