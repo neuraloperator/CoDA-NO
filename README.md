@@ -1,5 +1,5 @@
 
-**HOW TO USE CoDA-NO MODEL** [![Open In Colab](https://colab.research.google.com/drive/1W6Qy5Mk_vEjZgrA0tWMespXqKEYDOdc6?usp=sharing)
+**HOW TO USE CoDA-NO MODEL** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1W6Qy5Mk_vEjZgrA0tWMespXqKEYDOdc6?usp=sharing)
 
 
 ## Pretraining  Codomain Attention Neural Operators for Solving Multiphysics PDEs
