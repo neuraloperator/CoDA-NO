@@ -374,7 +374,7 @@ class NsElasticDataset():
             path = os.path.join(
                 self.location,
                 'mu=' + str(mu),
-                'x1=' + str(-4.0),
+                'x1=' + str(-2.0),
                 'x2=' + str(x2),
                 '1',
                 'Visualization')
