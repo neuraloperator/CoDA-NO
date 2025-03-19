@@ -83,7 +83,7 @@ To set up the environments and install the dependencies, please run the followin
 ```bash
 pip install -r requirements.txt
 ```
-It requires `python>=3.11.9`, and the `torch` installations need to be tailored to your machine's specific Cuda version. Also, the installation of torch_geometric and torch_scatter should match the local machine's Cuda version. More at the [installation guide](https://pytorch-geometric.readthedocs.io/en/latest/). 
+It requires `python=3.11.9`, and the `torch` installations need to be tailored to your machine's specific Cuda version. Also, the installation of torch_geometric and torch_scatter should match the local machine's Cuda version. More at the [installation guide](https://pytorch-geometric.readthedocs.io/en/latest/). 
 
 **Shortcut:** If you already use the `neuraloprator` package, we have installed most of the packages. Then, you just need to execute the following line to roll back to a compatible version.
 
