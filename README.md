@@ -22,10 +22,6 @@ At each CoDA-NO layer, the input function is tokenized codomain-wise to generate
 
 
 ## Navier Stokes+Elastic Wave and Navier Stokes Dataset
-<p align="center">
-    <img src="https://github.com/ashiq24/CoDA-NO/blob/web_resources/images/data_vis.png" alt="">
-    <br>
-</p>
 
 The fluid-solid interaction dataset is available at [HuggingFace](https://huggingface.co/datasets/ashiq24/FSI-pde-dataset). To download, please use the code
 ```python
