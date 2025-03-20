@@ -35,6 +35,9 @@ folder_path = snapshot_download(
 ```
 ### Data Set Structure
 
+**Displacement Field**
+![Animation](https://github.com/neuraloperator/CoDA-NO/blob/main/fsi_animation_dx.gif?raw=true)
+
 **Fluid Structure Interaction(NS +Elastic wave)**
 The `fsi-data` folder contains simulation data organized by various parameters (`mu`, `x1`, `x2`) where `mu` determines the viscosity and `x1` and `x2` are the parameters of the inlet condition. The dataset includes files for mesh, displacement, velocity, and pressure. 
 
