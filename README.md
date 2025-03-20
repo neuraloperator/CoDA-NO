@@ -26,17 +26,26 @@ At each CoDA-NO layer, the input function is tokenized codomain-wise to generate
     <img src="https://github.com/ashiq24/CoDA-NO/blob/web_resources/images/data_vis.png" alt="">
     <br>
 </p>
-The fluid-solid interaction dataset is available at (https://drive.google.com/drive/u/0/folders/1dN5de1n0qVYLEWf6JwXjqbCNUXl4Z8Tj).
 
+The fluid-solid interaction dataset is available at [HuggingFace](https://huggingface.co/datasets/ashiq24/FSI-pde-dataset). To download, please use the code
+```python
+from huggingface_hub import snapshot_download
+
+folder_path = snapshot_download(
+    repo_id="ashiq24/FSI-pde-dataset",
+    repo_type="dataset",
+    allow_patterns=["fsi-data/*"]
+)
+```
 ### Data Set Structure
 
 **Fluid Structure Interaction(NS +Elastic wave)**
-The `TF_fsi2_results` folder contains simulation data organized by various parameters (`mu`, `x1`, `x2`) where `mu` determines the viscosity and `x1` and `x2` are the parameters of the inlet condition. The dataset includes files for mesh, displacement, velocity, and pressure. 
+The `fsi-data` folder contains simulation data organized by various parameters (`mu`, `x1`, `x2`) where `mu` determines the viscosity and `x1` and `x2` are the parameters of the inlet condition. The dataset includes files for mesh, displacement, velocity, and pressure. 
 
 This dataset structure is detailed below:
 
 ```plaintext
-TF_fsi2_results/
+fsi-data/
 ├── mesh.h5                         # Initial mesh
 ├── mu=1.0/                         # Simulation results for mu = 1.0
 │   ├── x1=-4/                      # Inlet parameter x1 = -4
@@ -64,10 +73,9 @@ TF_fsi2_results/
 └── mu=10.0/                        # Simulation results for mu = 10.0
     └── ...                         # Similar structure as mu=1.0
 ```
-The dataset has `readData.py` and `readMesh.py` for loading the data. Also, the `NsElasticDataset` class in `data_utils/data_loaders.py` loads data automatically for all specified `mu`s and inlet conditions (`x1` and `x2`).
+The dataset has a dataloader and visualization code. Also, the `NsElasticDataset` class in `data_utils/data_loaders.py` loads data automatically for all specified `mu`s and inlet conditions (`x1` and `x2`).
 
-**Fluid Motions with Non-deformable Solid(NS)**
-The data is in the folder `TF_cfd2_results`, and the organization is the same as above. 
+**Fluid Motions with Non-deformable Solid(NS)** is stored in `cfd-data`
  
 ## Experiments
 
