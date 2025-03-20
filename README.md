@@ -1,7 +1,3 @@
-
-
-
-
 ## Pretraining  Codomain Attention Neural Operators for Solving Multiphysics PDEs 
 
 > [Paper Link](https://arxiv.org/pdf/2403.12553.pdf)
