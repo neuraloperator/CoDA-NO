@@ -71,7 +71,13 @@ fsi-data/
 The dataset has a dataloader and visualization code. Also, the `NsElasticDataset` class in `data_utils/data_loaders.py` loads data automatically for all specified `mu`s and inlet conditions (`x1` and `x2`).
 
 **Fluid Motions with Non-deformable Solid(NS)** is stored in `cfd-data`
- 
+
+## Re
+Huggingface dataset link: [Rayleigh_Benard_Convection](https://huggingface.co/datasets/ashiq24/Rayleigh_Benard_Convection)
+
+<img src="https://github.com/user-attachments/assets/ff219086-84c9-4184-9e33-f10e916f544b" width="300">
+
+
 ## Experiments
 
 > ⚠️ **Note:** This repository uses an older version of the `neuralop` library. For a version compatible with the latest `neuralop` library, please refer to the following implementation:
