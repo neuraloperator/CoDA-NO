@@ -72,7 +72,7 @@ The dataset has a dataloader and visualization code. Also, the `NsElasticDataset
 
 **Fluid Motions with Non-deformable Solid(NS)** is stored in `cfd-data`
 
-## Re
+## Rayleigh–Bénard convection
 Huggingface dataset link: [Rayleigh_Benard_Convection](https://huggingface.co/datasets/ashiq24/Rayleigh_Benard_Convection)
 
 <img src="https://github.com/user-attachments/assets/ff219086-84c9-4184-9e33-f10e916f544b" width="300">
